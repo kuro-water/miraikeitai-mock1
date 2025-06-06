@@ -8,5 +8,11 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4"
+  },
+  "dependencies": {
+    "electron": "^36.4.0"
   }
 }
