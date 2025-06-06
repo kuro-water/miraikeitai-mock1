@@ -1,0 +1,6 @@
+.idea
+.code-workspace
+.vscode
+/dist
+/node_modules
+/src/backup
