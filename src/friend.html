@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>フレンド</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="screen">
+            <h2>フレンド</h2>
+            <div style="width:90%;max-width:320px;margin-bottom:24px;">
+                <div style="font-weight:bold;margin-bottom:8px;">あなたのフレンドコード</div>
+                <div style="background:#eee;padding:12px 0;text-align:center;border-radius:6px;font-size:1.2rem;margin-bottom:20px;letter-spacing:2px;">
+                    ABCD-1234
+                </div>
+                <label for="friend-code-input" style="font-weight:bold;">フレンドコードを入力</label>
+                <input type="text" id="friend-code-input" style="width:100%;margin-top:8px;padding:8px;font-size:1rem;border-radius:5px;border:1px solid #ccc;">
+            </div>
+            <button class="button" type="submit" style="margin-top:8px;align-self:center;">追加</button>
+            <div style="width:90%;max-width:320px;margin:32px 0 24px 0;">
+                <div style="font-weight:bold;margin-bottom:8px;">フレンド一覧</div>
+                <ul id="friend-list" style="background:#fafafa;border-radius:6px;padding:16px 8px;list-style:none;margin:0;">
+                    <li style="padding:8px 0;border-bottom:1px solid #eee;">山田 太郎（ABCD-5678）</li>
+                    <li style="padding:8px 0;border-bottom:1px solid #eee;">佐藤 花子（EFGH-1234）</li>
+                    <li style="padding:8px 0;">鈴木 次郎（IJKL-9012）</li>
+                </ul>
+            </div>
+            <a href="index.html"><button class="button secondary">戻る</button></a>
+        </div>
+    </body>
+</html>

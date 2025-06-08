@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カレンダーで日記を見る</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <h2>カレンダーから日記を見る</h2>
+        <input type="date" id="calendar" style="margin-bottom:16px; font-size:1rem; padding:4px;">
+        <div class="diary-list" id="calendar-diary"></div>
+        <a id="write-link" href="write.html">
+            <button class="button">この日の日記を書く</button>
+        </a>
+        <a href="index.html"><button class="button secondary">戻る</button></a>
+        <button class="button danger" id="delete-all">日記全削除</button>
+    </div>
+    <script type="module" src="view_calendar.js"></script>
+    <script>
+        // カレンダー選択時に「日記を書く」リンクのURLを更新
+        const calendar = document.getElementById('calendar');
+        const writeLink = document.getElementById('write-link');
+        if (calendar && writeLink) {
+            function updateWriteLink() {
+                if (calendar.value) {
+                    writeLink.href = `write.html?date=${calendar.value}`;
+                } else {
+                    writeLink.href = 'write.html';
+                }
+            }
+            calendar.addEventListener('change', updateWriteLink);
+            updateWriteLink();
+        }
+    </script>
+</body>
+</html>

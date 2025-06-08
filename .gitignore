@@ -4,3 +4,5 @@
 /dist
 /node_modules
 /src/backup
+*.js
+*.js.map

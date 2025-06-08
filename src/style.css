@@ -1,0 +1,69 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f5f5f5;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.diary-list {
+    width: 90%;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.diary-item {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.diary-item:last-child {
+    border-bottom: none;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    background: #1976d2;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button.secondary {
+    background: #aaa;
+}
+
+.button.danger {
+    background: #d32f2f;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 1rem;
+}
+

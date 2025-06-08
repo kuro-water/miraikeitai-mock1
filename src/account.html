@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウント設定</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <h2>アカウント設定</h2>
+        <form id="account-form" style="width:90%;max-width:320px;display:flex;flex-direction:column;align-items:center;">
+            <label for="user-name" style="font-weight:bold;align-self:flex-start;">名前</label><br>
+            <input type="text" id="user-name" style="width:100%;margin-bottom:16px;padding:8px;font-size:1rem;border-radius:5px;border:1px solid #ccc;">
+            <br>
+            <label for="public-toggle" style="font-weight:bold;align-self:flex-start;">公開設定</label>
+            <div style="margin-bottom:16px;align-self:flex-start;">
+                <input type="checkbox" id="public-toggle">
+                <label for="public-toggle">日記を公開する</label>
+            </div>
+            <button class="button" type="submit" style="margin-top:8px;align-self:center;">保存</button>
+        </form>
+        <a href="index.html"><button class="button secondary">戻る</button></a>
+    </div>
+    <script type="module" src="account.js"></script>
+</body>
+</html>
