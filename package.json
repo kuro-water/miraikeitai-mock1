@@ -1,0 +1,15 @@
+{
+    "name": "miraiketaitai_mock1",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "kuro-water",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "tsc"
+    },
+    "devDependencies": {
+        "tsc": "^2.0.4"
+    }
+}
